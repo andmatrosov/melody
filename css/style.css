@@ -1,3 +1,18 @@
+/* ===== Fonts ===== */
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== End Fonts ===== */
+
+/* ====== Basics ======*/
+
 *,
 *::before,
 *::after {
@@ -7,6 +22,33 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
+
+/* ====== End Basics ======*/
+
+/* ====== Components ======*/
+
+.button {
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 16px 36px;
+	transition: .2s ease-in;
+}
+
+.button-primary {
+	color: #fff;
+	background-color: #3596F5;
+}
+
+.button-primary:hover {
+	background-color: #66B2FC;
+}
+
+
+/* ====== End Components ======*/
+
+/* ====== .header ======*/
 
 .header {
 	background-color: #635854;
@@ -64,3 +106,77 @@ body {
 	text-decoration: none;
 	color: #fff;
 }
+
+/* ====== /.header ======*/
+
+/* ====== .main ======*/
+
+.main {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 54px 0;
+	display: flex;
+}
+
+.main-info {
+	flex-grow: 1;
+	text-align: center;
+	/* margin-top: 60px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.main-title {
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: normal;
+	font-size: 37px;
+	line-height: 37px;
+	color: #635854;
+	margin: 0;
+}
+
+/* ====== /.main ======*/
+
+
+/* ====== .home ======*/
+
+.home-image path {
+	opacity: 0;
+	cursor: pointer;
+}
+
+.home-image path:hover {
+	opacity: 1;
+}
+
+/* ====== /.home ======*/
+
+/* ====== .counter ======*/
+
+.counter-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* margin: 100px 0; */
+}
+
+.counter-button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.counter-arrow-down {
+	transform: rotate(180deg);
+}
+
+.counter {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 113px;
+	color: #635854;
+	margin: 20px 0;
+}
+
+/* ====== /.counter ======*/
