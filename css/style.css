@@ -74,8 +74,8 @@ body {
 }
 
 .navbar-nav {
+
 	width: 60%;
-	margin-left: 10%;
 }
 
 .navbar-menu {
@@ -93,7 +93,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0 40px;
+	margin: 0 20px;
 }
 
 .navbar-link {
@@ -213,6 +213,18 @@ path.current-floor {
 	background-color: #D7D7D7;
 }
 
+.footer a:visited {
+	color: #635854;
+}
+
+.footer a:hover {
+	color: #3596F5;
+}
+
+.footer a:hover .social-icon {
+	fill: #3596F5;
+}
+
 .footer-nav {
 	display: flex;
 	justify-content: space-between;
@@ -261,7 +273,12 @@ path.current-floor {
 .social-icon {
 	width: 20px;
 	height: 20px;
-	vertical-align: middle
+	vertical-align: middle;
+	
+}
+
+.social-icon {
+	fill: #635854;
 }
 
 .footer-info {
@@ -281,7 +298,7 @@ path.current-floor {
 }
 
 .footer-info-link {
-	color: #635854;
+	stroke: #635854;
 }
 
 /* ====== /.footer ======*/
